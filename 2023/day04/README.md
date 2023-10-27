@@ -15,10 +15,42 @@ A shell script is a computer program designed to be run by a linux shell, a comm
 **Tasks**
 
 - Explain in your own words and examples, what is Shell Scripting for DevOps.
-- What is `#!/bin/bash?` can we write `#!/bin/sh` as well?
-- Write a Shell Script which prints `I will complete #90DaysOofDevOps challenge`
+  Shell scripting for DevOps is the practice of using scripting languages, primarily shell scripting languages such as Bash, to automate and streamline various tasks and processes in a DevOps environment
+- What is `#!/bin/bash?` can we write `#!/bin/sh` as well?--> "shebang", it is used to specify the interpreter that should be used to execute the script 
+- Write a Shell Script which prints `I will complete #90DaysOofDevOps challenge"
+  --> #!/bin/bash
+  echo "I will complete #90DaysOofDevOps challenge"
+  
 - Write a Shell Script to take user input, input from arguments and print the variables.
+- #!/bin/bash
+
+# Take user input
+echo "Enter a value: "
+read userInput
+
+# Take command-line argument
+argInput="$1"
+
+# Print user input and command-line argument
+echo "User Input: $userInput"
+echo "Command-line Argument: $argInput"
+
 - Write an Example of If else in Shell Scripting by comparing 2 numbers
+- --> #!/bin/bash
+
+# Define two numbers for comparison
+num1=10
+num2=20
+
+# Compare the numbers
+if [ "$num1" -eq "$num2" ]; then
+    echo "$num1 is equal to $num2"
+elif [ "$num1" -lt "$num2" ]; then
+    echo "$num1 is less than $num2"
+else
+    echo "$num1 is greater than $num2"
+fi
+
 
 Was it difficult?
 
